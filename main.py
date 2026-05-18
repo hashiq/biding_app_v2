@@ -1,28 +1,32 @@
-game_continue = True
-all_bid = []
-while game_continue:
-    bider_name = input("Enter a bider name :")
-    bid_price = int(input("Enter a bid price :"))
+# game_continue = True
+# bidding = {}
+# while game_continue:
+#     bider_name = input("Enter a bider name :")
+#     bid_price = int(input("Enter a bid price :"))
+#     bidding["name"]=bider_name
+#     bidding["price"] = bid_price
+#     bid_stop =input("Do you want to continue the bid 'yes' or 'no'").lower()
+#     if bid_stop == 'yes':
+#         pass
+#     elif bid_stop == 'no':
+#         game_continue =False
+#     else:
+#         game_continue=False
+#         print("#404 error ")
+#
+# print(bidding)
 
-    bid_history = {
+age = []
 
-    "name" : bider_name,
-    "price" : bid_price}
-    all_bid.append(bid_history)
+student = [
+    { "name": "vesttapen", "age":30},
+    { "name": "Lewis", "age":36},
+    { "name": "ronaldo", "age":42},
+]
+# for key in student:
+#     print(student["age"])
 
-    bid_stop =input("Do you want to continue the bid 'yes' or 'no'").lower()
-    if bid_stop == 'yes':
-        pass
-    elif bid_stop == 'no':
-        game_continue =False
-        for i in all_bid["price"]:
-            print(i)
-
-
-        print("Bid ended")
-    else:
-        game_continue=False
-        print("#404 error ")
+for i in range(len(student)):
+    age.append(student[i]["age"])
 
 
-print(all_bid)
